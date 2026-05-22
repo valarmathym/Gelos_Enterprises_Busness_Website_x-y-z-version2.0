@@ -1,7 +1,6 @@
 
 # Gelos Enterprises business Website – Version 2.1
-
-## Live Demo of the Project:    https://valarmathym.github.io/Gelos_Enterprises_Busness_Website_x-y-z-version2.1/
+   ### Live Demo:  https://valarmathym.github.io/Gelos_Enterprises_Busness_Website_x-y-z-version2.1/
 
 This project is an enhanced version of the Gelos Enterproses Business website developed as part of a web technology and innovation project. The website introduces modern interactive features focused on improving customer experience, accessibility, and engagement.
 
