@@ -1,0 +1,804 @@
+*{
+    margin:0em;
+    padding: 0em;
+    border-style: none;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+
+body{
+  
+    font-family:  Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+    line-height:1.6;
+    font-size: 16px;
+}
+#wrapper{
+   
+    margin:auto;
+    border-color: #1008e9;
+}
+#inner-wrapper{
+
+    width: 100%;
+    margin:auto;
+}
+
+/****************      Gelos  style guide  *****************************************/
+ 
+h1{
+    color: rgb(160,132,99);      /***** Bronze colour for Heading 1    *****/
+    font-family: Georgia, serif;
+    font-size:2.3em;      
+    padding:1.1em 0;
+    margin: 0.8rem 0;
+    margin-bottom: 20px; 
+    font-weight: 900; 
+}    
+h2{
+    color: rgb(60,71,84);
+    font-family: Georgia, serif;
+    font-size: 1.8em;
+}
+h3{
+    color:rgb(7,122,153);
+    font-family: Georgia, serif;
+    font-size:1.5em;
+}
+p{
+    padding-top:1rem;    /****** 1.8pt equals 18pt= 24px   *****/
+    padding-bottom: 12px;
+    font-size: 1rem;
+    font-family: 'Calibri', 'Arial', 'Helvetica', sans-serif;
+    color: black; 
+}
+#home{
+    background-color:rgb(64, 64, 67);
+}   
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    position:absolute;
+    right:30px;
+    top:10px;  
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    margin: 5px;
+    height: 2px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    background-color:white;
+}
+#menu-toggle{
+    display:none;
+}
+header img{
+    width:100%;
+}
+ header{
+    background-color:  rgb(85, 77, 77);   
+    min-height: 80px;
+    color:#fff;
+    text-align:center;
+    padding:5rem 0px;
+    padding-bottom: 0.1rem;
+    max-width:100%; 
+
+}
+
+.nav{
+    background-color:rgb(64, 64, 67);;     /****  bluetint--  RGB(148,178,191);   *****/
+    color: #fff;
+    padding: 1.3rem 0;  
+}
+   
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-logo{
+    position: absolute;
+    left:0.8em;
+    top: 0.3em;
+    padding-bottom:0.1rem;
+    opacity: 0.7;
+    z-index: 1;
+    max-width:100%; 
+             
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    list-style: none;  
+    font-size: 1.6rem;  
+    position: absolute; 
+    background-color:rgb(64, 64, 67);
+    top: 40px; 
+    padding:10px 0;
+    right:10px;
+    width:100%;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:#fff;    
+   
+}
+.nav-item{
+    text-align: center;
+    margin:0;
+    padding: 12px 0;
+}
+.carousel-link:hover{
+    background-color: blue;
+    color: #FFF;
+}
+/*************************              START OF CAROUSEL             *******************/
+
+.carousel-inner{
+    max-height: 100%;
+    max-width: 100%;
+   
+}
+.carousel-inner img{
+    display: block;
+    max-width: 100%;
+    overflow: visible;
+}
+.carousel-inner button{
+    border-radius: 0ch;
+    padding: 8px;
+    margin: 4%;
+    opacity: 0.5;
+}
+   
+ 
+.carousel-item active{
+    position: relative;
+    display: inline-block;
+    float: none; 
+    transition: 0s !important;
+    
+  } 
+    
+ .carousel-control-prev-icon, .carousel-control-next-icon{
+    border:4px solid white;
+    background-color: rgb(91, 92, 92);
+    opacity: 0.7;
+    padding:20px 0;
+    }
+      
+  .overlay-left{
+    position:absolute;
+    top:0.05rem;
+    left:0.6rem;
+    color:White;     
+    font-size:1.3rem; 
+    font-weight: 400;   
+    padding:1.1em 0;
+    margin: 0.8rem 0;
+    margin-bottom: 20px;
+  }  
+
+ .overlay-text{
+    position: absolute;
+    top: 50%; 
+    left: 71%; 
+    transform: translate(-50%, -50%); 
+    background-color: #302828a0; 
+    color: #ffffffea; 
+    font-size: 1.3rem; 
+    height:auto;
+    line-height: 1.2;             
+    padding: 10px ; 
+    text-align:center;
+    opacity: 0.9;
+    z-index: 1;
+    max-width: 20rem;
+    padding-bottom: 0px;
+   
+   
+  }
+  .overlay-text p{
+     color: white;
+     font-size: 1.4rem;
+  }
+
+  .overlay-text a{
+    top: 125px;
+    right:45px;
+    opacity: 0.8;
+    padding: 0.6rem;      /****************** 8px    **************/
+    margin: 0.3rem; 
+    font-size:1.1rem ;       /*******************    4px  ************/
+    color:#e0e0e0;
+    background-color:rgb(26, 38, 216) ;
+    border: 1px solid rgb(13, 13, 14);
+    position:absolute;
+   
+   
+}
+  .overlay-text a:hover{
+    color: #db3442;
+    background-color: #6d9dbd;
+    }
+  .carousel-item{
+    overflow-x: hidden;
+  }
+
+  .carousel-item a{
+    opacity: 0.8;
+    padding: 0rem;      /****************** 8px    **************/
+    margin: 0.3rem;        /*******************    4px  ************/
+    background-color:rgb(13, 46, 212) ;
+    border: 1px solid rgb(20, 20, 21);  
+    font-size:1rem;
+    color:#f4eded;
+    position:absolute;
+  }
+
+  .overlay-text .carousel-link{
+    text-decoration: none;
+    width: 5rem;
+   
+ }
+ 
+/*********************************   END OF CAROUSEL  ***************************************/
+ #wrapper {
+
+margin: auto;
+background-color:hsla(0, 10%, 94%, 0.463); 
+border: 3px solid rgb(16, 38, 84);
+width:100%;
+}   
+
+.section-content{
+   background-color:#e8e7ed; 
+    color:#042236;
+    padding:10px 20px;
+    text-decoration: none;
+    border-color: rgb(153, 153, 154);
+
+}
+
+/********************************       SECTIONS              ***********************************/
+.section{
+    padding: 4rem 0;
+    text-align: left;
+    color:rgb(37, 29, 29);
+}
+
+.section:nth-child(even){
+    background-color:#fff;
+}
+
+.section-content{
+  
+    margin:0 auto;
+    text-align: left;
+}
+
+ /*************** OFFERINGS--- START OF ACCORDION  ******************************************/
+
+ .container-offerings{
+    background-color: hsla(0, 10%, 94%, 0.463);
+    border: 1px solid rgb(70, 70, 72);
+    padding:25px;
+ }
+
+#accordion .card-header{
+   font-size: clamp(0.1rem, 2vw, 1.5rem); 
+}
+
+#accordion { 
+    cursor: pointer;
+    margin: 15px; 
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size:medium;               
+    background-color: hwb(0 78% 21%);
+    border-radius: 2ch;
+    }
+
+#accordion .card {
+    padding: 4px;
+    margin: 10px;
+    border-radius:0.9ch;
+    border-color: #2a23f4;
+    height: auto;
+    background-color:#323cce; 
+    max-width: 100%;
+    color:white;
+    }
+
+#accordion .card span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    font-weight:800;
+     color:white;
+     z-index: 1;
+}
+#accordion .card button span h2{
+    font-size: 1.8rem;     /** Gelos guideline-paragraph 1.8em  ***/
+    padding-left: 3rem;
+    color: rgb(66,71,84);
+
+}
+
+.collapse .card-body{
+    /**font-size: 1rem; **/   
+    font-size: clamp(0.6rem, 2vw, 1rem);  
+    color: black;
+    background-color:lab(95.29% 0.67 0.23);
+    }
+    
+
+/******************************* COMPANY VALUES   ***************************************/
+#about,#offerings,#company-values,#contact {
+    padding:20px 10px;
+}
+  
+.values-items{
+   
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.3rem;
+    border: 1px solid #f0f1f4;
+    max-width:100%;
+    
+    }
+   
+.values-item{
+    
+    background-color:#f6f1f1;
+    padding: 0 20px;
+    margin: 10px;
+    float:left;
+    column-gap: 10px;
+    column-width:280px;
+    text-align: left;
+    /**font-size: clamp(0.01rem, 2vw, 0.2rem);  **/
+    font-size:1rem;
+    border: 1px solid #68686c;
+    
+}   
+
+.values-item img{
+    opacity: 0.9;
+    max-width: 160px;
+    max-width:100%;
+    border: 2px solid #38383c;
+} 
+.values-item h3{
+   
+    font-size: 1.8em;
+    font-weight: 700;
+    padding:25px 0;
+    margin:2px;
+    
+}  
+/************************             CONTACT PAGE                   *****************************************/
+
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    color:white;
+}
+#contact p,h2, ul li a{
+    color: white;
+}
+
+#contact .left-panel{
+    background-color: rgb(70, 70, 75);
+    padding: 30px;
+    width: 40%;
+}
+#contact .left-panel p{
+     font-weight: 400;
+     color:white;
+}
+#contact .right-panel{
+    background-color: hsl(240, 3%, 34%);
+    width:60%;
+    padding:30px;
+}
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/***********************************************************************************/
+
+
+                          
+/****************************           FOOTER   *********************************************/
+
+
+/***********************                 CONTACT FORM             *****************/
+#contact{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Calibri', 'Arial', 'Helvetica', sans-serif;
+    padding: 0px;
+   
+}
+.contact-section{
+    display:flex;
+    flex-direction: row;
+}
+.left-panel{
+    display:flex;
+    flex-direction:column;
+    text-align: left;
+    margin:auto;
+    padding-top: 25px;
+}
+.left-panel p a{
+    border:1px solid yellow;
+    padding: 2px;
+    text-decoration: none;
+    background-color: #1008e9;
+    color:white;
+}
+.left-panel ul li{
+    text-decoration: none;
+    padding:10px 0; 
+}
+
+.right-panel label{
+    
+    display: block;
+}
+
+span  {
+color:lab(49.05% 73.18 57.64);
+}
+
+input{
+    
+    border: 1px solid  #000;
+    display: block;	
+    margin-top: 6px;
+    width: 200px;
+    height:30px;
+}
+
+textarea  { 
+    border: 1px solid  #000;
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+    height:auto;
+}
+
+input[type="submit"]  {
+    border: 1px solid  #545dd7;
+    padding: 3px 7px;	
+    width: 70px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color:hsl(47, 74%, 45%);   
+}  
+
+#button {
+border-radius: 12px;
+}
+
+  /************        End of Contact Form        ************/
+  /**********************************Neesletter page ************************************/
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Calibri', 'Arial', 'Helvetica', sans-serif;
+    padding: 0px;
+}
+  #newsletter h1, p{
+    font-family: 'Segoe UI', sans-serif;
+}
+#newsletter p{
+  
+    padding: 0px;
+    text-decoration: none;
+    color:rgb(24, 23, 23);
+}
+#newsletter .section-class{
+    padding-bottom:4rem;
+    
+}
+select{
+     border: 2px solid  #000;
+    display: block;	
+    margin-top: 6px;
+    width: 200px;
+    height:30px;
+}
+#checkbox{
+    display:flex;
+    flex-direction: row;
+    width:4rem;
+}
+
+  #interest {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #1d0f0f;
+ /* border-radius: 4px; */
+}
+#chatbot{
+    padding:1rem;
+    margin:2rem;
+}
+
+
+  
+  /*************               START OF FOOTER              *******************/
+  
+footer {
+    font-family: 'Calibri', 'Arial', 'Helvetica', sans-serif;
+    display: flex;
+    flex-wrap:wrap;
+    
+    justify-content: center;
+    background-color: #333;
+    color:#fff;
+   
+   /* padding: 50px 20px;  */
+    font-size:0.75em;
+    margin: auto;
+    flex-direction: column;
+    padding:0 140px;
+    width:100%;
+} 
+
+   footer p,ul {
+    list-style: none;
+    justify-content: space-around ; 
+    justify-items: center;
+    color:white;
+    
+    }
+ 
+#utilities{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    font-size: 0.9rem;
+   
+    padding: 0 10px;
+    }
+#utilities p{
+   font-size: 1.3rem;;
+    font-weight: 900;
+    padding-top: 0 30px;
+}
+
+#utilities .privacy{
+    text-decoration: none;
+    color: white;
+   
+}
+#socials {
+    display: flex;
+    flex-direction: row;
+    max-width: 13rem;
+    align-items: center;
+    margin: auto;
+    }
+    
+#socials img{
+        /*width: 70%; */
+        max-width: 28px;   /*actual width   */
+        height: auto;
+        padding-bottom: 30px;
+       
+        
+    }
+/***************************CASE -STUDY WEB PAGE ******************************/
+#case-study{
+ border:1px solid rgb(21, 15, 15);
+    padding:2.6rem;
+}
+.arrow-link { 
+    font-size: 12rem;
+    text-decoration: none; 
+    text-align:end; 
+    color: #007bff; 
+    border: 2px solid darkblue; 
+    transition: color 0.3s ease;  
+} 
+
+.arrow-link:hover { 
+    color: #6b2c2c;  
+} 
+#case-study a{
+    display:contents;
+    font-weight: 800;
+    border:2px solid blue;
+    font-size: 60px;
+}
+    
+/*********************************************************************************************
+                                MEDIA QUERY            
+******************************************************************************************/
+@media screen and (max-width: 768px){
+  
+    .nav{
+      
+        background-color:rgb(64, 64, 67);     /****  bluetint--  RGB(148,178,191);   *****/
+        color: #fff;
+        padding: 0.4rem 0;  
+      }
+       
+    .nav-logo{
+       background-color: rgb(78, 77, 77);
+       position: absolute;
+       opacity: 0.5;
+       z-index: 1;
+       max-width:100%;
+    }
+
+    .nav-container{
+        display:flex;
+        flex-direction: row;
+        overflow: visible;
+    }
+
+    #menu-toggle{
+        top: 10px;
+        right: 0;
+    }
+
+    .nav-menu{
+        display:none;
+        flex-direction: column;
+        width: 50%;
+        padding: 0 5px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;   
+        top: 85px;
+        right: 0;
+        float: right; 
+        color:hwb(0 90% 8%);
+        text-align: left;
+        background-color: rgb(99, 78, 54);
+        z-index: 2;
+        opacity: 0.8;
+        line-height: 0.06rem;
+        position:absolute;
+    }
+  
+    .nav-item{
+        margin: 0.4rem;
+        padding: 0.7rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .nav-menu.active{
+        display: flex;
+        max-width:250px;
+    }
+    
+    #menu-toggle:checked ~.nav-menu{
+        display: flex;
+    }
+
+    .hamburger{
+        display: block; 
+        padding-right: 8px;
+        padding-top: 10px;
+    }
+
+    .overlay-text { 
+        position:absolute;  
+        text-align: center;
+         width:17rem;
+         height:auto;
+        padding:0 10px;
+        font-size: 1rem;
+    }
+
+    .overlay-text a{
+        top: 60px;
+        right:70px;
+        opacity: 0.8;
+        margin: 0.3rem;        /*******************    4px  ************/
+        color:#e0e0e0;
+        background-color:rgb(26, 38, 216) ; 
+        font-size:0.8rem; 
+        position:absolute;
+        padding:3px;
+        opacity: 0.7;
+    }
+      
+    .overlay-text a .carousel-link{
+        text-decoration: none;
+        width:5rem;
+    }
+
+/********************                COMPANY VALUES      ***************************************/
+
+    .values-items{
+            display:flex;
+            flex-direction: column;
+            grid-template-columns: repeat(1, 1fr);
+            background-color: #e0e0e0;
+            align-items: center;
+            margin: 0.5rem;
+            column-gap: 3px;
+            max-width: 100%;
+           /* font-size: 1.2rem;  */
+            font-size: clamp(1rem, 1vw, 1.2rem) ;  
+        }  
+    .values-item{
+        text-align: left;
+        padding: 2rem 4.2rem;
+    } 
+    .values-item img{
+        max-width: 100%;
+        padding: 0 ;
+        margin:0.4rem;
+    } 
+         
+  
+/****************************    CONTACT SECTION   ******************************************/
+    
+    .contact-section{
+            display: flex;
+            flex-direction: column;
+        }
+    #contact .left-panel{
+       
+        padding: 30px;
+        width: 100%;
+    }
+    #contact .right-panel{
+        background-color: hsl(246, 5%, 60%);
+        width:100%;
+        padding:20 30px;
+
+    }
+
+/**********************            FOOTER              ****************************************/
+    
+   
+footer p,  #utilities .privacy, li{
+    font-size: 0.4rem;
+    width:100%;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+}
+
+     
+     #utilities p, a .privacy{
+         text-decoration: none;
+         color: white;
+         width:100%;
+         font-size: 0.7rem;
+        
+     }   
+     #socials li img{
+        width:1.2rem;
+         justify-content: space-between;
+         margin: auto;
+         padding-right: 5px;;
+         }
+   
+   
+}
